@@ -33,3 +33,10 @@ export const fetchSingleProduct = async (productId: string) => {
   if (!product) redirect("/products");
   return product;
 };
+
+export const createProductAction = async (
+  prevState: any,
+  formData: FormData
+): Promise<{ message: string }> => {
+  return { message: "product created" };
+};

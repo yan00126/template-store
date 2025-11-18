@@ -1,5 +1,36 @@
 {
-  "node": {},
+  "node": {
+    "d3176b94a895a58fd99ec02afb609dc8ef47161b": {
+      "workers": {
+        "app/_not-found/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/admin/sales/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/orders/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/cart/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/admin/products/create/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/admin/products/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/products/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/_not-found/page": "action-browser",
+        "app/admin/sales/page": "action-browser",
+        "app/page": "action-browser",
+        "app/orders/page": "action-browser",
+        "app/cart/page": "action-browser",
+        "app/admin/products/create/page": "action-browser",
+        "app/admin/products/page": "action-browser",
+        "app/products/[id]/page": "action-browser"
+      }
+    },
+    "ce04a7c20bfa173496a0e5dc14b00dfb26496709": {
+      "workers": {
+        "app/admin/products/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fyanfei%2FDocuments%2FNetlify%2FStore%2Fapp%2Fadmin%2Fproducts%2Fcreate%2Fpage.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/products/create/page": "rsc"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "cnDVQ1yZMBVmnwCvVrH6iMFKQrKkm5vs7GrpXqE4cAk="
+  "encryptionKey": "SxWNPnkTD9tL34Grc51HW1H1ShVSVDvnY5yR3b0hgpo="
 }
