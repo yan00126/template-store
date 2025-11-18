@@ -22,7 +22,7 @@ function LinksDropdown() {
       <DropdownMenuContent className="w-48" align="start" sideOffset={10}>
         {links.map((link) => {
           return (
-            <DropdownMenuItem key={link.href}>
+            <DropdownMenuItem asChild key={link.href}>
               <Link href={link.href} className="capitalize w-full">
                 {link.label}
               </Link>
