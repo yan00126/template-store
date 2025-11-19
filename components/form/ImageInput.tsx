@@ -13,3 +13,4 @@ function ImageInput() {
     </div>
   );
 }
+export default ImageInput;

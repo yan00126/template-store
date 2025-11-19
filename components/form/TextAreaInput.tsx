@@ -6,11 +6,7 @@ type TextAreaInputProps = {
   defaultValue?: string;
 };
 
-function TextAreaInputProps({
-  name,
-  labelText,
-  defaultValue,
-}: TextAreaInputProps) {
+function TextAreaInput({ name, labelText, defaultValue }: TextAreaInputProps) {
   return (
     <div className="mb-2">
       <Label htmlFor={name} className="capitalize">
@@ -27,3 +23,4 @@ function TextAreaInputProps({
     </div>
   );
 }
+export default TextAreaInput;
