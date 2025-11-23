@@ -1,6 +1,0 @@
-{
-  "/products/page": "app/products/page.js",
-  "/admin/products/create/page": "app/admin/products/create/page.js",
-  "/admin/products/page": "app/admin/products/page.js",
-  "/admin/sales/page": "app/admin/sales/page.js"
-}
