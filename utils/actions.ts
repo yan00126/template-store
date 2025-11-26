@@ -256,7 +256,17 @@ export const createReviewAction = async (
   } catch (error) {}
 };
 
-export const fetchProductReviews = async () => {};
+export const fetchProductReviews = async (productId: string) => {
+  const reviews = await db.review.findMany({
+    where: {
+      productId,
+    },
+    orderBy: {
+      createAt: "desc",
+    },
+  });
+  return reviews;
+};
 export const fetchProductReviewsByUser = async () => {};
 export const deleteProductReviews = async () => {};
 export const findExistingReviews = async () => {};
