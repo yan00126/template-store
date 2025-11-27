@@ -267,7 +267,23 @@ export const fetchProductReviews = async (productId: string) => {
   });
   return reviews;
 };
-export const fetchProductReviewsByUser = async () => {};
+export const fetchProductRating = async (productId: string) => {
+  const result = await db.review.groupBy({
+    by: ["productId"],
+    _avg: {
+      rating: true,
+    },
+    _count: {
+      rating: true,
+    },
+    where: { productId },
+  });
+  return {
+    rating: result[0]?._avg.rating?.toFixed(1) ?? 0,
+    count: result[0]?._count.rating ?? 0,
+  };
+};
+
 export const deleteProductReviews = async () => {};
 export const findExistingReviews = async () => {};
-export const fetchProductRating = async () => {};
+export const fetchProductReviewsByUser = async () => {};
