@@ -253,7 +253,9 @@ export const createReviewAction = async (
     });
     revalidatePath(`/products/${validatedFields.productId}`);
     return { message: "review submitted successfully" };
-  } catch (error) {}
+  } catch (error) {
+    return renderError(error);
+  }
 };
 
 export const fetchProductReviews = async (productId: string) => {
@@ -355,7 +357,9 @@ const updateOrCreateCartItem = async () => {};
 
 export const updateCart = async () => {};
 
-export const addToCartAction = async () => {};
+export const addToCartAction = async (prevState: any, formData: FormData) => {
+  return { message: "product added to the cart" };
+};
 
 export const removeCartItemAction = async () => {};
 
