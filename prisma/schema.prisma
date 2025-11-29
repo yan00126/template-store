@@ -56,7 +56,7 @@ model Review{
 
 
 model Cart {
-  id String @id @default(uuid())
+  id      String @id @default(uuid())
   clerkId String
   cartItems CartItem[]
   numItemsInCart Int @default(0)
