@@ -551,7 +551,7 @@ export const createOrderAction = async (prevState: any, formData: FormData) => {
       errorOnFailure: true,
     });
     cartId = cart.id;
-    await db.order.findMany({
+    await db.order.deleteMany({
       where: {
         clerkId: user.id,
         isPaid: false,
