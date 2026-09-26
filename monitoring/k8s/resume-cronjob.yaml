@@ -1,0 +1,55 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: supabase-resume
+  namespace: store-monitor
+spec:
+  schedule: "*/5 * * * *"
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 60
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    spec:
+      backoffLimit: 0
+      activeDeadlineSeconds: 60
+      template:
+        metadata:
+          labels:
+            app: supabase-resume
+        spec:
+          automountServiceAccountToken: false
+          restartPolicy: Never
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            runAsGroup: 1000
+            seccompProfile:
+              type: RuntimeDefault
+          containers:
+            - name: resume
+              image: store-monitor:resume-v1
+              imagePullPolicy: IfNotPresent
+              command: ["node", "resume.mjs"]
+              env:
+                - name: SUPABASE_PROJECT_REF
+                  value: brtdiatgxjrwjkzejhbq
+                - name: SUPABASE_AUTO_RESUME
+                  value: "true"
+                - name: SUPABASE_ACCESS_TOKEN
+                  valueFrom:
+                    secretKeyRef:
+                      name: supabase-resume
+                      key: SUPABASE_ACCESS_TOKEN
+              resources:
+                requests:
+                  cpu: 50m
+                  memory: 32Mi
+                limits:
+                  cpu: 250m
+                  memory: 128Mi
+              securityContext:
+                allowPrivilegeEscalation: false
+                readOnlyRootFilesystem: true
+                capabilities:
+                  drop: ["ALL"]
